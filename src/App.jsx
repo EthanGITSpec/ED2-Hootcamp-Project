@@ -47,7 +47,7 @@ function App() {
     loadTasks()
   }
 
-  //Task toggle function that updates the completed status of a task in the database and reloads the task list
+  //Task toggle function that updates the completed status of a task in the database and reloads the task list 
   async function toggleTask(task) {
     const { error } = await supabase
       .from('tasks')
