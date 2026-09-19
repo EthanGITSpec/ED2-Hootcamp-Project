@@ -5,7 +5,7 @@ For the AI Hootcamp-sourced assignment due on 9/27/26
 This task manager web app is a simple, intuitive, and minimalist approach to organizing a to-do list.
 
 ## Link to deployed app:
-[link]
+https://curious-longma-ed2-ethanm.netlify.app/
 
 ## Link to demo video:
 [link]
