@@ -84,6 +84,7 @@ function App() {
   return (
     <div className="app">
       <h1>Task Manager</h1>
+      <p className="subtitle">Ethan M, Z23650406</p>
 
       <form onSubmit={addTask}>
         <input
