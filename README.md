@@ -2,3 +2,8 @@
 For the AI Hootcamp-sourced assignment due on 9/27/26
 
 # Project: Task Manager Web App
+
+## Link to deployed app:
+[link]
+
+## App description:
