@@ -94,17 +94,23 @@ function App() {
       <ul>
         {tasks.map((task) => (
           <li key={task.id}>
-            <span
-              className={task.completed ? 'completed' : ''}
-              onClick={() => toggleTask(task)}
-            >
-              {task.title}
-            </span>
+  <label>
+    <input
+      type="checkbox"
+      checked={task.completed}
+      onChange={() => toggleTask(task)}
+    />
 
-            <button onClick={() => deleteTask(task.id)}>
-              Delete
-            </button>
-          </li>
+    <span className={task.completed ? 'completed' : ''}>
+      {task.title}
+    </span>
+  </label>
+
+  <button onClick={() => deleteTask(task.id)}>
+    Delete
+  </button>
+</li>
+
         ))}
       </ul>
     </div>
