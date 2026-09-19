@@ -7,12 +7,13 @@ const supabase = createClient(
   import.meta.env.VITE_SUPABASE_ANON_KEY
 )
 
+//Main app functionality
 function App() {
   const [tasks, setTasks] = useState([])
   const [title, setTitle] = useState('')
   console.log('Supabase URL:', import.meta.env.VITE_SUPABASE_URL)
 
-
+  //Task loading function that fetches tasks from the database and updates the state
   async function loadTasks() {
     const { data, error } = await supabase
       .from('tasks')
@@ -27,6 +28,7 @@ function App() {
     setTasks(data)
   }
 
+  //Task addition function that inserts a new task into the database and reloads the task list
   async function addTask(e) {
     e.preventDefault()
 
@@ -45,6 +47,7 @@ function App() {
     loadTasks()
   }
 
+  //Task toggle function that updates the completed status of a task in the database and reloads the task list
   async function toggleTask(task) {
     const { error } = await supabase
       .from('tasks')
@@ -59,6 +62,7 @@ function App() {
     loadTasks()
   }
 
+  //Task deletion function that removes a task from the database and reloads the task list
   async function deleteTask(id) {
     const { error } = await supabase
       .from('tasks')
