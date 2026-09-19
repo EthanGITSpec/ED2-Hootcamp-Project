@@ -24,7 +24,7 @@ https://youtu.be/KoxlYhMPMc8
 - Supabase Database
 - Netlify Hosting
 
-## Setup
+## Setup (for running locally):
 
 Install dependencies:
 
