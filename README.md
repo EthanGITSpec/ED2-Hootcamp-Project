@@ -8,7 +8,7 @@ This task manager web app is a simple, intuitive, and minimalist approach to org
 https://curious-longma-ed2-ethanm.netlify.app/
 
 ## Link to demo video:
-[link]
+https://youtu.be/KoxlYhMPMc8
 
 ## Features
 
